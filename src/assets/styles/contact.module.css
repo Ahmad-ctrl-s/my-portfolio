@@ -1,0 +1,73 @@
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    /* background-color: #fc313b; */
+    color: white !important;
+    transform: translateY(-3px);
+}
+
+.whatsapp-social-icon:hover {
+    background-color: #25D366;
+}
+
+.linkedin-social-icon:hover {
+    background-color: #0077B5;
+}
+
+.facebook-social-icon:hover {
+    background-color: #1877F2;
+}
+
+.instagram-social-icon:hover {
+    background-color: #E1306C;
+}
+
+.github-social-icon:hover {
+    background-color: #333;
+}
+
+.contact-container:hover .phone-icon {
+    color: #25D366;
+}
+
+
+
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotateY(0deg) rotateX(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotateY(360deg) rotateX(360deg);
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateZ(20px) translateY(0);
+    }
+
+    50% {
+        transform: translateZ(20px) translateY(-10px);
+    }
+}
+
+/* التأكد من أن المجسم يكون ثلاثي الأبعاد */
+@media (min-width: 768px) {
+    .floating-shapes {
+        perspective: 800px;
+    }
+}

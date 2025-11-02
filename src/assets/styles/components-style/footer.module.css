@@ -1,0 +1,184 @@
+.footer-wrapper {
+    background-color: var(--third-color)
+}
+
+.footer-list {
+    list-style: none;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-list li {
+    position: relative;
+    padding: 0.2rem;
+}
+
+.footer-list li a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.footer-list li:hover .whatsapp-icon {
+    color: #25D366;
+}
+
+.footer-list li:hover .github-icon {
+    color: #333;
+}
+
+.footer-list li:hover .instagram-icon {
+    color: #E1306C;
+}
+
+.footer-list li:hover .facebook-icon {
+    color: #1877F2;
+}
+
+.footer-list li:hover .email-icon {
+    color: #D44638;
+}
+
+.footer-list li:hover .phone-icon {
+    color: #25D366;
+}
+
+.footer-list li:hover .map-icon {
+    color: #FF0000;
+}
+
+.footer-list li:hover .linkedin-icon {
+    color: #0077B5;
+}
+
+.footer-list li:hover .hire-icon {
+    color: #2E5BFF;
+}
+
+.footer-list li:hover .my-resume-icon {
+    color: #00C851;
+}
+
+.footer-list li:hover .touch-icon {
+    color: #FF9500;
+}
+
+.footer-list li:hover .about-me-icon {
+    color: #8A2BE2;
+}
+
+.footer-list li:hover .my-projects-icon {
+    color: #007ACC;
+}
+
+.heart-icon {
+    color: #fc313b;
+}
+
+.footer-list li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 1px;
+    background-color: var(--secondary-color);
+    transition: ease-in-out 0.5s;
+}
+
+.footer-list li:hover::after {
+    width: 100%;
+}
+
+.right-arrow {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.5s ease;
+    margin-left: 0.5rem;
+}
+
+li:hover .right-arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.dot {
+    width: 5px;
+    height: 5px;
+    background-color: var(--secondary-color);
+}
+
+
+
+@media (min-width:0px) and (max-width: 767px) {
+    .footer-title {
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    .footer-list li {
+        font-size: 0.7rem;
+        font-weight: bold;
+    }
+
+    .copy-rights-first-row {
+        font-size: 1rem;
+    }
+
+    .copy-rights-container {
+        margin-top: 1.5rem !important;
+    }
+
+    .whatsapp-icon {
+        color: #25D366;
+    }
+
+    .github-icon {
+        color: #333;
+    }
+
+    .instagram-icon {
+        color: #E1306C;
+    }
+
+    .facebook-icon {
+        color: #1877F2;
+    }
+
+    .email-icon {
+        color: #D44638;
+    }
+
+    .phone-icon {
+        color: #25D366;
+    }
+
+    .map-icon {
+        color: #FF0000;
+    }
+
+    .linkedin-icon {
+        color: #0077B5;
+    }
+
+    .hire-icon {
+        color: #2E5BFF;
+    }
+
+    .my-resume-icon {
+        color: #00C851;
+    }
+
+    .touch-icon {
+        color: #FF9500;
+    }
+
+    .about-me-icon {
+        color: #8A2BE2;
+    }
+
+    .my-projects-icon {
+        color: #007ACC;
+    }
+}
